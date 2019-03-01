@@ -1,0 +1,2 @@
+See file:///D:/Users/Conno/Desktop/Code/Entity101/build/tmp/compileTestCpp/output.txt for all output for compileTestCpp.
+Finished compileTestCpp, see full log file:///D:/Users/Conno/Desktop/Code/Entity101/build/tmp/compileTestCpp/output.txt.

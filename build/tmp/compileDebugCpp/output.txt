@@ -1,0 +1,2 @@
+See file:///D:/Users/Conno/Desktop/Code/Entity101/build/tmp/compileDebugCpp/output.txt for all output for compileDebugCpp.
+Finished compileDebugCpp, see full log file:///D:/Users/Conno/Desktop/Code/Entity101/build/tmp/compileDebugCpp/output.txt.

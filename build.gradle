@@ -1,0 +1,10 @@
+apply plugin: 'cpp-library' 
+apply plugin: 'cpp-unit-test' 
+
+library {
+    baseName = "Entity101" 
+}
+
+unitTest {
+    baseName = "Entity101Test" 
+}
