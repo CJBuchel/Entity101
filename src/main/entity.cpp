@@ -12,13 +12,14 @@ using namespace std;
 
 
 void TestNameLength() {
-  Greeter g("GradleUser");
+  Entity g("GradleUser");
   std::cout << "[test] returns the correct name length..." << std::flush;
   assert(g.GetNameLength() == 10);
   std::cout << " pass" << std::endl;
 }
 
 int main(int argc, char** argv) {
+	
 	cout << "Program Running" << endl;
     if (pinchTest && lib101Test) {
       cout << "Test Lib Complete. Program Has Run With Execution Of 1";

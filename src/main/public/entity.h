@@ -1,5 +1,5 @@
-#ifndef GREETER_H_
-#define GREETER_H_
+#ifndef ENTITY_H_
+#define ENTITY_H_
 
 #include <string>
 #include <algorithm>
@@ -10,10 +10,10 @@
 #  define DECLSPEC
 #endif  // defined(DLL_EXPORT)
 
-class DECLSPEC Greeter {
+class DECLSPEC Entity {
   public:
-    explicit Greeter(const std::string& name) : name_(name) {};
-    Greeter() : name_("World") {};
+    explicit Entity(const std::string& name) : name_(name) {};
+    Entity() : name_("World") {};
     void Greet();
     int GetNameLength();
   private:
