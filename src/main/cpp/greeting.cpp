@@ -1,5 +1,5 @@
 #include "greeter.h"
-
+#include <windows.h>
 #include <iostream>
 
 void Greeter::Greet() {
@@ -8,4 +8,5 @@ void Greeter::Greet() {
 
 int Greeter::GetNameLength() {
   return name_.length();
+  system("pause");
 }
