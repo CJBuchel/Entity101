@@ -8,3 +8,5 @@
  */
 
 rootProject.name = 'Entity101'
+
+include 'TestProject'
