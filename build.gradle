@@ -1,5 +1,10 @@
-apply plugin : 'cpp-application' 
+apply plugin: 'cpp-library' 
+apply plugin: 'cpp-unit-test' 
 
-application {
-    baseName = "greeting" 
+library {
+    baseName = "greeter" 
+}
+
+unitTest {
+    baseName = "greeterTest" 
 }
