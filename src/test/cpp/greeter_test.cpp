@@ -1,5 +1,5 @@
 #include "greeter.h"
-
+#include <windows.h>
 #include <cassert>
 #include <iostream>
 
@@ -12,5 +12,6 @@ void TestNameLength() {
 
 int main(int argc, char** argv) {
   TestNameLength();
+  system("pause");
   return 0;
 }
