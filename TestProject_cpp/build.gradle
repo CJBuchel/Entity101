@@ -3,7 +3,6 @@
  *
  * This generated file contains a sample CPP project to get you started.
  */
-
 plugins {
     // Apply the cpp-application plugin to add support for building CPP executables
     id 'cpp-application'
