@@ -3,3 +3,19 @@
 
 # Ignore Gradle build output directory
 build
+
+#Other Ignores
+.idea
+*.ipr
+*.iml
+*.iws
+quickstart/gradle/libs/
+server_script/maven/
+server_script/tmp/
+.vscode
+.DS_Store
+out
+bin/
+.settings/
+.project
+.classpath
