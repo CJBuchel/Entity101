@@ -7,6 +7,6 @@
 
 int main() {
     TestProject_cpp::Greeter greeter;
-    assert(greeter.greeting().compare("Hello, World!") == 0);
+    assert(greeter.greeting().compare("CPP Test Complete") == 0);
     return 0;
 }

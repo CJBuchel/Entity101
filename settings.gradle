@@ -10,3 +10,5 @@
 rootProject.name = 'Entity101'
 
 include 'TestProject'
+
+include 'TestProject_cpp', 'TestProject_java'

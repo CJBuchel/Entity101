@@ -5,7 +5,7 @@ package TestProject_java;
 
 public class App {
     public String getGreeting() {
-        return "Hello world.";
+        return "Java Test Complete";
     }
 
     public static void main(String[] args) {
