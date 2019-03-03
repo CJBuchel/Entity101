@@ -1,6 +1,0 @@
-See file:///D:/Users/Conno/Desktop/Code/Entity101/build/tmp/compileDebugCpp/output.txt for all output for compileDebugCpp.
-compiling main.cpp successful.
-main.cpp
-C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include\xlocale(319): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc
-
-Finished compileDebugCpp, see full log file:///D:/Users/Conno/Desktop/Code/Entity101/build/tmp/compileDebugCpp/output.txt.

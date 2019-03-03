@@ -1,7 +1,0 @@
-/DEBUG
-/OUT:D:\Users\Conno\Desktop\Code\Entity101\build\exe\main\debug\greeting.exe
-/NOLOGO
-"/LIBPATH:C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\lib\x64"
-"/LIBPATH:C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17763.0\um\x64"
-"/LIBPATH:C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17763.0\ucrt\x64"
-D:\Users\Conno\Desktop\Code\Entity101\build\obj\main\debug\biznmyfp3z431mmtf5jlwqjsh\main.obj
