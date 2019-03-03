@@ -3,17 +3,15 @@
  */
 
 #include <iostream>
-#include <windows.h>
 #include <stdlib.h>
 #include "app.h"
 
 std::string TestProject_cpp::Greeter::greeting() {
-    return std::string("CPP Test Complete");
+    return std::string("Hello, World!");
 }
 
 int main () {
     TestProject_cpp::Greeter greeter;
     std::cout << greeter.greeting() << std::endl;
-    system("pause");
     return 0;
 }
