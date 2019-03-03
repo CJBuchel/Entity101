@@ -7,6 +7,6 @@
  * in the user manual at https://docs.gradle.org/5.2.1/userguide/multi_project_builds.html
  */
 
-rootProject.name = 'Entity101'
+rootProject.name = 'MachineLearning'
 
-include 'TestProject_cpp', 'TestProject_java', 'mlpack', 'EmbeddedTools'
+// include 'TestProject_cpp', 'TestProject_java'
