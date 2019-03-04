@@ -1,0 +1,13 @@
+language: groovy
+
+jdk:
+- oraclejdk8
+
+notifications:
+  email: false
+
+install:
+- ./gradlew -version
+
+script:
+- ./gradlew build check publishToMavenLocal --scan --stacktrace
