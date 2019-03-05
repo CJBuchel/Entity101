@@ -20,7 +20,6 @@ bin/
 .project
 .classpath
 
-build*
 xcode*
 .DS_Store
 src/mlpack/core/util/gitversion.hpp
@@ -30,7 +29,6 @@ cmake-build-*
 *.pyc
 
 .gradle
-build
 .idea
 *.ipr
 *.iml
