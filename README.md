@@ -16,7 +16,7 @@
   
   
   ## Tutorials & Information
-  
+  - Requirement Install Instructions http://mlpack.org/docs/mlpack-3.0.4/doxygen/build_windows.html
   - mlpack (Machine Learning Pack) Video Breakdown https://www.youtube.com/watch?v=FX6Db6TxkS0
   
   ### Common
