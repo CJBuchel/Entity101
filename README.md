@@ -20,7 +20,7 @@
   - mlpack (Machine Learning Pack) Video Breakdown https://www.youtube.com/watch?v=FX6Db6TxkS0
   - The mlpack needs to have cmake links installed to do this (After you have installed cmake) go to your directory where mlpack is installed, and run this command. Remember to change the command to the current desired setting e.g ```':FILEPATH="C:/mlpack/mlpack-```
 
-  ```cmake -G "Visual Studio 15 2017 Win64" -DBLAS_LIBRARY:FILEPATH="D:\Users\Conno\Desktop\Code\Entity101\common\mlpack\mlpack-3.0.4-3.0.4/packages/OpenBLAS.0.2.14.1/lib/native/lib/x64/libopenblas.dll.a" -DLAPACK_LIBRARY:FILEPATH="D:\Users\Conno\Desktop\Code\Entity101\common\mlpack\mlpack-3.0.4-3.0.4/packages/OpenBLAS.0.2.14.1/lib/native/lib/x64/libopenblas.dll.a" -DCMAKE_PREFIX:FILEPATH="D:\Users\Conno\Desktop\Code\Entity101\common\mlpack\mlpack-3.0.4\armadillo-9.200.7" -DBUILD_SHARED_LIBS=OFF ..```
+  ```cmake -G "Visual Studio 15 2017 Win64" -DBLAS_LIBRARY:FILEPATH="D:\Users\Conno\Desktop\Code\Entity101\common\mlpack\mlpack-3.0.4/packages/OpenBLAS.0.2.14.1/lib/native/lib/x64/libopenblas.dll.a" -DLAPACK_LIBRARY:FILEPATH="D:\Users\Conno\Desktop\Code\Entity101\common\mlpack\mlpack-3.0.4/packages/OpenBLAS.0.2.14.1/lib/native/lib/x64/libopenblas.dll.a" -DCMAKE_PREFIX:FILEPATH="D:\Users\Conno\Desktop\Code\Entity101\common\mlpack\armadillo" -DBUILD_SHARED_LIBS=OFF ..```
   
   ### Common
   
