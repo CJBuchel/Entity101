@@ -16,12 +16,22 @@
   
   
   ## Tutorials & Information
+  
+  ### Setup
   - Requirement Install Instructions http://mlpack.org/docs/mlpack-3.0.4/doxygen/build_windows.html
   - mlpack (Machine Learning Pack) Video Breakdown https://www.youtube.com/watch?v=FX6Db6TxkS0
-  - The mlpack needs to have cmake links installed to do this (After you have installed cmake) go to your directory where mlpack is installed, and run this command. Remember to change the command to the current desired setting e.g ```':FILEPATH="C:/mlpack/mlpack-```
+  - The mlpack needs to have cmake links installed to do this (After you have installed cmake) go to your directory where mlpack is         installed, and run this command. Remember to change the command to the current desired setting e.g ```':FILEPATH="C:/mlpack/mlpack-```
 
   ```cmake -G "Visual Studio 15 2017 Win64" -DBLAS_LIBRARY:FILEPATH="D:\Users\Conno\Desktop\Code\Entity101\common\mlpack\mlpack-3.0.4/packages/OpenBLAS.0.2.14.1/lib/native/lib/x64/libopenblas.dll.a" -DLAPACK_LIBRARY:FILEPATH="D:\Users\Conno\Desktop\Code\Entity101\common\mlpack\mlpack-3.0.4/packages/OpenBLAS.0.2.14.1/lib/native/lib/x64/libopenblas.dll.a" -DCMAKE_PREFIX:FILEPATH="D:\Users\Conno\Desktop\Code\Entity101\common\mlpack\armadillo" -DBUILD_SHARED_LIBS=OFF ..```
   
+  - Once it has successfully finished, open "C:\mlpack\armadillo-8.500.1\build\armadillo.sln"
+    Build > Build Solution
+    Once it has successfully finished, close Visual Studio
+
+  - Next We need to run a similar command into the build file of mlpack/mlpack<version>. again update the command to your correct           directories.
+ 
+ ```cmake -G "Visual Studio 15 2017 Win64" -DBLAS_LIBRARY:FILEPATH="D:/Users/Conno/Desktop/Code/Entity101/common/mlpack/mlpack-3.0.4/packages/OpenBLAS.0.2.14.1/lib/native/lib/x64/libopenblas.dll.a" -DLAPACK_LIBRARY:FILEPATH="D:/Users/Conno/Desktop/Code/Entity101/common/mlpack/mlpack-3.0.4/packages/OpenBLAS.0.2.14.1/lib/native/lib/x64/libopenblas.dll.a" -DARMADILLO_INCLUDE_DIR="D:/Users/Conno/Desktop/Code/Entity101/common/mlpack/mlpack-3.0.4/armadillo-9.200.7/include" -DARMADILLO_LIBRARY:FILEPATH="D:/Users/Conno/Desktop/Code/Entity101/common/mlpack/mlpack-3.0.4/armadillo-9.200.7/build/Debug/armadillo.lib" -DBOOST_INCLUDEDIR:PATH="C:/boost/boost_1_69_0" -DBOOST_LIBRARYDIR:PATH="C:/boost/boost_1_69_0/lib64-msvc-14.1" -DDEBUG=OFF -DPROFILE=OFF ..```
+ 
   ### Common
   
   - (common) readme
