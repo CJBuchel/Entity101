@@ -30,7 +30,7 @@
 
   - Next We need to run a similar command into the build file of mlpack/mlpack<version>. again update the command to your correct           directories.
  
- ```cmake -G "Visual Studio 15 2017 Win64" -DBLAS_LIBRARY:FILEPATH="D:/Users/Conno/Desktop/Code/Entity101/common/mlpack/mlpack-3.0.4/packages/OpenBLAS.0.2.14.1/lib/native/lib/x64/libopenblas.dll.a" -DLAPACK_LIBRARY:FILEPATH="D:/Users/Conno/Desktop/Code/Entity101/common/mlpack/mlpack-3.0.4/packages/OpenBLAS.0.2.14.1/lib/native/lib/x64/libopenblas.dll.a" -DARMADILLO_INCLUDE_DIR="D:/Users/Conno/Desktop/Code/Entity101/common/mlpack/mlpack-3.0.4/armadillo-9.200.7/include" -DARMADILLO_LIBRARY:FILEPATH="D:/Users/Conno/Desktop/Code/Entity101/common/mlpack/mlpack-3.0.4/armadillo-9.200.7/build/Debug/armadillo.lib" -DBOOST_INCLUDEDIR:PATH="C:/boost/boost_1_69_0" -DBOOST_LIBRARYDIR:PATH="C:/boost/boost_1_69_0/libs" -DDEBUG=OFF -DPROFILE=OFF ..```
+ ```cmake -G "Visual Studio 15 2017 Win64" -DBLAS_LIBRARY:FILEPATH="D:/Users/Conno/Desktop/Code/Entity101/common/mlpack/mlpack-3.0.4/packages/OpenBLAS.0.2.14.1/lib/native/lib/x64/libopenblas.dll.a" -DLAPACK_LIBRARY:FILEPATH="D:/Users/Conno/Desktop/Code/Entity101/common/mlpack/mlpack-3.0.4/packages/OpenBLAS.0.2.14.1/lib/native/lib/x64/libopenblas.dll.a" -DARMADILLO_INCLUDE_DIR="D:/Users/Conno/Desktop/Code/Entity101/common/mlpack/mlpack-3.0.4/armadillo-9.200.7/include" -DARMADILLO_LIBRARY:FILEPATH="D:/Users/Conno/Desktop/Code/Entity101/common/mlpack/mlpack-3.0.4/armadillo-9.200.7/build/Debug/armadillo.lib" -DBOOST_INCLUDEDIR:PATH="C:/boost/boost_1_69_0" -DBOOST_LIBRARYDIR:PATH="C:\boost\boost_1_69_0\lib64-msvc-12.0" -DDEBUG=OFF -DPROFILE=OFF ..```
  
   ### Common
   
