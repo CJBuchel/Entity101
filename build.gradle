@@ -30,7 +30,7 @@ dependencies {
     testImplementation 'junit:junit:4.12'
 }
 
-tasks.register("Test") {
+tasks.register("Main_Test") {
     group = '.Entity101 main'
     description = 'Outputs Text'
 

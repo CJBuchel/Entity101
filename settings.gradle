@@ -9,4 +9,4 @@
 
 rootProject.name = 'Entity101'
 
-include 'TestProject_cpp', 'TestProject_java', 'mlpack', 'EmbeddedTools'
+include 'TestProject_cpp', 'TestProject_java', 'mlpack', 'EmbeddedTools', 'common', 'MachineLearning'

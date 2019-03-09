@@ -5,6 +5,7 @@
 #include <iostream>
 #include <stdlib.h>
 #include "app.h"
+#include <Windows.h>
 
 std::string TestProject_cpp::Greeter::greeting() {
     return std::string("Hello, World!");
@@ -13,5 +14,6 @@ std::string TestProject_cpp::Greeter::greeting() {
 int main () {
     TestProject_cpp::Greeter greeter;
     std::cout << greeter.greeting() << std::endl;
+    system("pause");
     return 0;
 }

@@ -16,3 +16,12 @@ plugins {
 application {
     targetMachines.add(machines.windows.x86_64)
 }
+
+tasks.register("Test") {
+    group = '.Entity101 main'
+    description = 'Outputs Text'
+
+    doLast {
+        println 'Test Complete'
+    }
+}

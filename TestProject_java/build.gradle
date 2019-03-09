@@ -30,3 +30,12 @@ dependencies {
 
 // Define the main class for the application
 mainClassName = 'TestProject_java.App'
+
+tasks.register("Test") {
+    group = '.Entity101 main'
+    description = 'Outputs Text'
+
+    doLast {
+        println 'Test Complete'
+    }
+}
