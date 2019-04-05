@@ -29,3 +29,12 @@ dependencies {
     testImplementation 'org.spockframework:spock-core:1.2-groovy-2.5'
     testImplementation 'junit:junit:4.12'
 }
+
+tasks.register("Test") {
+    group = '.Entity101 main'
+    description = 'Outputs Text'
+
+    doLast {
+        println 'Test Complete'
+    }
+}

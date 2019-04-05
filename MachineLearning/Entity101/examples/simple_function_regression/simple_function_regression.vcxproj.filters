@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\examples\simple_function_regression\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\examples\simple_function_regression\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{7A3C7E6D-D7C3-3EC2-8A81-0FF979E124D4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
