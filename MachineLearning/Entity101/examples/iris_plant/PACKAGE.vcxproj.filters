@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\CMakeFiles\274413782015c637e1466f0a2d5db1f9\PACKAGE_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{343625CD-8A58-36C5-A406-E05FCF96240B}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

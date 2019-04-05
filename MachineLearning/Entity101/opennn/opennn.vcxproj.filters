@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\variables.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\instances.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\missing_values.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\data_set.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\plug_in.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\ordinary_differential_equations.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\mathematical_model.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\inputs.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\outputs.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\unscaling_layer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\scaling_layer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\probabilistic_layer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\perceptron_layer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\perceptron.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\neural_network.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\multilayer_perceptron.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\independent_parameters.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\conditions_layer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\bounding_layer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\sum_squared_error.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\root_mean_squared_error.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\error_term.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\regularization_term.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\loss_index.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\outputs_integrals.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\normalized_squared_error.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\neural_parameters_norm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\minkowski_error.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\mean_squared_error.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\weighted_squared_error.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\roc_area_error.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\cross_entropy_error.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\training_strategy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\training_algorithm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\training_rate_algorithm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\random_search.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\quasi_newton_method.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\newton_method.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\levenberg_marquardt_algorithm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\gradient_descent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\evolutionary_algorithm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\conjugate_gradient.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\model_selection.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\order_selection_algorithm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\incremental_order.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\golden_section_order.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\simulated_annealing_order.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\inputs_selection_algorithm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\growing_inputs.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\pruning_inputs.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\genetic_algorithm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\testing_analysis.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\numerical_integration.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\numerical_differentiation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\principal_components_layer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\threshold_selection_algorithm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\f1_score_optimization_threshold.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\matthew_correlation_optimization_threshold.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\youden_index_optimization_threshold.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\kappa_coefficient_optimization_threshold.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\roc_curve_optimization_threshold.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\selective_pruning.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{7A3C7E6D-D7C3-3EC2-8A81-0FF979E124D4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

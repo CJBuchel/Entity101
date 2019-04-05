@@ -1,0 +1,366 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\unit_testing.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\variables_test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\instances_test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\missing_values_test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\data_set_test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\plug_in_test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\ordinary_differential_equations_test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\mathematical_model_test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\unscaling_layer_test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\scaling_layer_test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\probabilistic_layer_test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\perceptron_layer_test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\perceptron_test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\neural_network_test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\multilayer_perceptron_test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\inputs_test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\outputs_test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\independent_parameters_test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\conditions_layer_test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\bounding_layer_test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\sum_squared_error_test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\root_mean_squared_error_test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\error_term_test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\mock_error_term.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\loss_index_test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\outputs_integrals_test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\normalized_squared_error_test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\weighted_squared_error_test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\neural_parameters_norm_test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\minkowski_error_test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\mean_squared_error_test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\cross_entropy_error_test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\training_strategy_test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\training_rate_algorithm_test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\mock_training_algorithm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\training_algorithm_test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\random_search_test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\quasi_newton_method_test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\newton_method_test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\levenberg_marquardt_algorithm_test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\gradient_descent_test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\evolutionary_algorithm_test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\conjugate_gradient_test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\model_selection_test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\order_selection_algorithm_test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\incremental_order_test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\golden_section_order_test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\simulated_annealing_order_test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\inputs_selection_algorithm_test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\growing_inputs_test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\pruning_inputs_test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\genetic_algorithm_test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\testing_analysis_test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\vector_test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\matrix_test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\numerical_integration_test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\numerical_differentiation_test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\unit_testing.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\variables_test.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\instances_test.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\missing_values_test.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\data_set_test.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\plug_in_test.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\ordinary_differential_equations_test.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\mathematical_model_test.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\unscaling_layer_test.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\scaling_layer_test.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\probabilistic_layer_test.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\perceptron_layer_test.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\perceptron_test.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\neural_network_test.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\multilayer_perceptron_test.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\inputs_test.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\outputs_test.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\independent_parameters_test.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\conditions_layer_test.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\bounding_layer_test.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\sum_squared_error_test.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\root_mean_squared_error_test.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\error_term_test.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\mock_error_term.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\loss_index_test.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\outputs_integrals_test.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\normalized_squared_error_test.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\weighted_squared_error_test.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\neural_parameters_norm_test.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\minkowski_error_test.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\mean_squared_error_test.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\cross_entropy_error_test.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\training_strategy_test.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\training_rate_algorithm_test.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\mock_training_algorithm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\training_algorithm_test.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\random_search_test.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\quasi_newton_method_test.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\newton_method_test.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\levenberg_marquardt_algorithm_test.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\gradient_descent_test.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\evolutionary_algorithm_test.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\conjugate_gradient_test.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\model_selection_test.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\order_selection_algorithm_test.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\incremental_order_test.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\golden_section_order_test.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\simulated_annealing_order_test.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\inputs_selection_algorithm_test.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\growing_inputs_test.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\pruning_inputs_test.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\genetic_algorithm_test.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\testing_analysis_test.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\vector_test.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\matrix_test.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\numerical_integration_test.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\numerical_differentiation_test.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\opennn_tests.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tests\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{B1F91B67-5253-35BA-BF1B-B11F6B126917}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{7A3C7E6D-D7C3-3EC2-8A81-0FF979E124D4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
