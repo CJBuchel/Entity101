@@ -51,9 +51,9 @@
         <ScalingMethod>MinimumMaximum</ScalingMethod>
     </ScalingLayer>
     <MultilayerPerceptron>
-        <Architecture>4 4 1</Architecture>
+        <Architecture>4 1 1</Architecture>
         <LayersActivationFunction>HyperbolicTangent Linear</LayersActivationFunction>
-        <Parameters>0.928604 1.23293 -0.594476 2.18588 1.37851 0.715222 0.135352 0.000548923 -0.201113 -0.0264635 -1.34863 -0.0945441 1.42024 -2.44853 -2.18978 -1.53248 -0.75865 -0.359104 0.00384945 2.55424 0.665911 0.0729872 -0.26851 0.589936 -0.00376562</Parameters>
+        <Parameters>-2.7909 -1.26782 7.29733 -7.28145 -5.09627 0.499993 0.500028</Parameters>
     </MultilayerPerceptron>
     <ProbabilisticLayer>
         <ProbabilisticNeuronsNumber>1</ProbabilisticNeuronsNumber>
