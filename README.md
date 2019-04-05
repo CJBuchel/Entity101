@@ -1,7 +1,7 @@
 # Entity101
 
 
-##(Documentation is a work in progress. Still testing with current setup)
+## (Documentation is a work in progress. Still testing with current setup)
 ## Current Tasks {
  
  
