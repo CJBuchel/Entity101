@@ -1,0 +1,11 @@
+D:\Users\Conno\Desktop\Code\Entity101\Entity101_GUI\bin\Debug\Entity101_GUI.exe.config
+D:\Users\Conno\Desktop\Code\Entity101\Entity101_GUI\bin\Debug\Entity101_GUI.exe
+D:\Users\Conno\Desktop\Code\Entity101\Entity101_GUI\bin\Debug\Entity101_GUI.pdb
+D:\Users\Conno\Desktop\Code\Entity101\Entity101_GUI\bin\Debug\Bunifu_UI_v1.5.3.dll
+D:\Users\Conno\Desktop\Code\Entity101\Entity101_GUI\obj\Debug\Entity101_GUI.Login.resources
+D:\Users\Conno\Desktop\Code\Entity101\Entity101_GUI\obj\Debug\Entity101_GUI.Properties.Resources.resources
+D:\Users\Conno\Desktop\Code\Entity101\Entity101_GUI\obj\Debug\Entity101_GUI.csproj.GenerateResource.cache
+D:\Users\Conno\Desktop\Code\Entity101\Entity101_GUI\obj\Debug\Entity101_GUI.csproj.CoreCompileInputs.cache
+D:\Users\Conno\Desktop\Code\Entity101\Entity101_GUI\obj\Debug\Entity101_GUI.csproj.CopyComplete
+D:\Users\Conno\Desktop\Code\Entity101\Entity101_GUI\obj\Debug\Entity101_GUI.exe
+D:\Users\Conno\Desktop\Code\Entity101\Entity101_GUI\obj\Debug\Entity101_GUI.pdb

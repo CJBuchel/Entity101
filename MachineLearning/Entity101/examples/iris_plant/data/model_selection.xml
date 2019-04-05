@@ -6,7 +6,7 @@
         <MaximumSelectionFailures>3</MaximumSelectionFailures>
         <MaximumInputsNumber>100</MaximumInputsNumber>
         <MinimumCorrelation>0</MinimumCorrelation>
-        <MaximumCorrelation>1e+020</MaximumCorrelation>
+        <MaximumCorrelation>1e+20</MaximumCorrelation>
         <MaximumIterationsNumber>1000</MaximumIterationsNumber>
         <MaximumTime>10000</MaximumTime>
         <ReservePerformanceHistory>1</ReservePerformanceHistory>
@@ -25,7 +25,7 @@
         <SelectionLossGoal>0</SelectionLossGoal>
         <MaximumIterationsNumber>1000</MaximumIterationsNumber>
         <MaximumTime>10000</MaximumTime>
-        <Tolerance>1e-007</Tolerance>
+        <Tolerance>1e-07</Tolerance>
     </OrderSelection>
     <ThresholdSelection Type="YOUDEN_INDEX">
         <MinimumThreshold>0</MinimumThreshold>

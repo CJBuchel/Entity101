@@ -7,7 +7,7 @@
         <LagsNumber>0</LagsNumber>
         <StepsAhead>0</StepsAhead>
         <ColumnsName>0</ColumnsName>
-        <RowsLabel>0</RowsLabel>
+        <RowsLabel>204</RowsLabel>
         <Separator>Space</Separator>
         <MissingValuesLabel>?</MissingValuesLabel>
         <DataFileName>../data/iris_plant.dat</DataFileName>
@@ -59,7 +59,7 @@
     </Variables>
     <Instances>
         <InstancesNumber>150</InstancesNumber>
-        <ItemsUses>0 0 0 0 0 1 0 1 0 2 1 0 0 2 0 2 0 0 0 2 1 0 2 1 0 0 1 1 0 2 0 2 0 0 0 0 0 0 0 2 0 0 2 0 1 2 0 1 1 0 0 1 2 0 1 0 0 0 1 0 1 0 0 0 2 0 1 0 1 1 0 0 0 2 0 0 2 0 2 1 0 0 0 1 0 2 0 0 0 1 2 0 2 0 2 0 1 0 1 0 0 2 0 1 0 0 1 2 2 2 0 1 1 1 0 2 0 0 0 0 0 0 0 1 0 0 0 2 2 2 0 0 0 0 0 0 0 0 2 0 0 0 0 2 1 0 0 0 1 2</ItemsUses>
+        <ItemsUses>2 1 0 0 1 0 0 0 0 0 0 2 2 0 0 0 0 0 1 0 0 2 2 0 0 1 1 0 0 0 0 2 1 1 1 2 0 0 2 0 1 0 0 0 0 0 0 0 0 0 0 2 0 2 1 0 0 0 0 0 0 1 0 0 2 0 0 0 1 2 2 0 1 2 0 2 0 2 1 0 0 0 0 0 2 0 0 2 2 2 0 1 1 0 1 0 0 0 2 1 0 0 0 0 2 1 0 1 2 0 1 2 0 2 1 1 0 0 0 0 0 0 0 0 0 0 2 2 0 0 0 1 1 0 1 0 0 1 1 0 2 1 0 0 0 1 0 0 2 2</ItemsUses>
     </Instances>
     <MissingValues>
         <InstancesNumber>150</InstancesNumber>

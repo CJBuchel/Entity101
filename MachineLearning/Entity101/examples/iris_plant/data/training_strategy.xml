@@ -3,12 +3,12 @@
         <InverseHessianApproximationMethod>BFGS</InverseHessianApproximationMethod>
         <TrainingRateAlgorithm>
             <TrainingRateMethod>BrentMethod</TrainingRateMethod>
-            <TrainingRateTolerance>1e-006</TrainingRateTolerance>
+            <TrainingRateTolerance>1e-06</TrainingRateTolerance>
         </TrainingRateAlgorithm>
         <ReturnMinimumSelectionErrorNN>0</ReturnMinimumSelectionErrorNN>
         <MinimumParametersIncrementNorm>0</MinimumParametersIncrementNorm>
-        <MinimumPerformanceIncrease>1e-006</MinimumPerformanceIncrease>
-        <PerformanceGoal>-1e+099</PerformanceGoal>
+        <MinimumPerformanceIncrease>1e-06</MinimumPerformanceIncrease>
+        <PerformanceGoal>-1e+99</PerformanceGoal>
         <GradientNormGoal>0</GradientNormGoal>
         <MaximumSelectionLossDecreases>1000000</MaximumSelectionLossDecreases>
         <MaximumIterationsNumber>1000</MaximumIterationsNumber>
