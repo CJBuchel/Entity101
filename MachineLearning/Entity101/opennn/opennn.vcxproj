@@ -1,0 +1,340 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{50C55074-6349-3721-A2C9-A6693AFF36C9}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>opennn</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">opennn.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">opennn</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">opennn.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">opennn</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">opennn.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">opennn</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">opennn.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">opennn</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule D:/Users/Conno/Desktop/Code/Entity101/MachineLearning/Entity101/opennn/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Users/Conno/Desktop/Code/Entity101/MachineLearning/Entity101 -BD:/Users/Conno/Desktop/Code/Entity101/MachineLearning/Entity101 --check-stamp-file D:/Users/Conno/Desktop/Code/Entity101/MachineLearning/Entity101/opennn/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/Users/Conno/Desktop/Code/Entity101/MachineLearning/Entity101/opennn/CMakeLists.txt;D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\CMakeLists.txt;D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule D:/Users/Conno/Desktop/Code/Entity101/MachineLearning/Entity101/opennn/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Users/Conno/Desktop/Code/Entity101/MachineLearning/Entity101 -BD:/Users/Conno/Desktop/Code/Entity101/MachineLearning/Entity101 --check-stamp-file D:/Users/Conno/Desktop/Code/Entity101/MachineLearning/Entity101/opennn/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/Users/Conno/Desktop/Code/Entity101/MachineLearning/Entity101/opennn/CMakeLists.txt;D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\CMakeLists.txt;D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule D:/Users/Conno/Desktop/Code/Entity101/MachineLearning/Entity101/opennn/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Users/Conno/Desktop/Code/Entity101/MachineLearning/Entity101 -BD:/Users/Conno/Desktop/Code/Entity101/MachineLearning/Entity101 --check-stamp-file D:/Users/Conno/Desktop/Code/Entity101/MachineLearning/Entity101/opennn/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:/Users/Conno/Desktop/Code/Entity101/MachineLearning/Entity101/opennn/CMakeLists.txt;D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\CMakeLists.txt;D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule D:/Users/Conno/Desktop/Code/Entity101/MachineLearning/Entity101/opennn/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Users/Conno/Desktop/Code/Entity101/MachineLearning/Entity101 -BD:/Users/Conno/Desktop/Code/Entity101/MachineLearning/Entity101 --check-stamp-file D:/Users/Conno/Desktop/Code/Entity101/MachineLearning/Entity101/opennn/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:/Users/Conno/Desktop/Code/Entity101/MachineLearning/Entity101/opennn/CMakeLists.txt;D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\CMakeLists.txt;D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\variables.cpp" />
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\instances.cpp" />
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\missing_values.cpp" />
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\data_set.cpp" />
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\plug_in.cpp" />
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\ordinary_differential_equations.cpp" />
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\mathematical_model.cpp" />
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\inputs.cpp" />
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\outputs.cpp" />
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\unscaling_layer.cpp" />
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\scaling_layer.cpp" />
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\probabilistic_layer.cpp" />
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\perceptron_layer.cpp" />
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\perceptron.cpp" />
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\neural_network.cpp" />
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\multilayer_perceptron.cpp" />
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\independent_parameters.cpp" />
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\conditions_layer.cpp" />
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\bounding_layer.cpp" />
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\sum_squared_error.cpp" />
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\root_mean_squared_error.cpp" />
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\error_term.cpp" />
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\regularization_term.cpp" />
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\loss_index.cpp" />
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\outputs_integrals.cpp" />
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\normalized_squared_error.cpp" />
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\neural_parameters_norm.cpp" />
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\minkowski_error.cpp" />
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\mean_squared_error.cpp" />
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\weighted_squared_error.cpp" />
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\roc_area_error.cpp" />
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\cross_entropy_error.cpp" />
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\training_strategy.cpp" />
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\training_algorithm.cpp" />
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\training_rate_algorithm.cpp" />
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\random_search.cpp" />
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\quasi_newton_method.cpp" />
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\newton_method.cpp" />
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\levenberg_marquardt_algorithm.cpp" />
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\gradient_descent.cpp" />
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\evolutionary_algorithm.cpp" />
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\conjugate_gradient.cpp" />
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\model_selection.cpp" />
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\order_selection_algorithm.cpp" />
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\incremental_order.cpp" />
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\golden_section_order.cpp" />
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\simulated_annealing_order.cpp" />
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\inputs_selection_algorithm.cpp" />
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\growing_inputs.cpp" />
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\pruning_inputs.cpp" />
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\genetic_algorithm.cpp" />
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\testing_analysis.cpp" />
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\numerical_integration.cpp" />
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\numerical_differentiation.cpp" />
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\principal_components_layer.cpp" />
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\threshold_selection_algorithm.cpp" />
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\f1_score_optimization_threshold.cpp" />
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\matthew_correlation_optimization_threshold.cpp" />
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\youden_index_optimization_threshold.cpp" />
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\kappa_coefficient_optimization_threshold.cpp" />
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\roc_curve_optimization_threshold.cpp" />
+    <ClCompile Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\opennn\selective_pruning.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\ZERO_CHECK.vcxproj">
+      <Project>{796FCAA1-2173-3EFB-9BE9-14A40C7C9220}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\Users\Conno\Desktop\Code\Entity101\MachineLearning\Entity101\tinyxml2\tinyxml2.vcxproj">
+      <Project>{D8ABBA70-3D13-31F3-8D6F-F706FFE69826}</Project>
+      <Name>tinyxml2</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
