@@ -1,5 +1,7 @@
 # Entity101
 
+
+## (Documentation is a work in progress. Still testing with current setup)
 ## Current Tasks {
  
  
@@ -17,8 +19,8 @@
   
   ## Tutorials & Information
   
-  - mlpack (Machine Learning Pack) Video Breakdown https://www.youtube.com/watch?v=FX6Db6TxkS0
-  
+  ### Setup
+set up with visual studio. go to `Entity101\MachineLearning\Entity101` and open `OpenNN.sln` in Visual Studio 2017 or later
   ### Common
   
   - (common) readme
