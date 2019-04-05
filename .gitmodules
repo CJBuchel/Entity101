@@ -1,4 +1,2 @@
-[submodule "MachineLearning/Entity101"]
-	url = https://github.com/CJBuchel/OpenNN.git
 [submodule "common/Libs&Sub-Modules/OpenNN"]
 	url = https://github.com/CJBuchel/OpenNN.git
