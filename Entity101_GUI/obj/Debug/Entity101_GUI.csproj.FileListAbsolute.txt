@@ -9,3 +9,17 @@ D:\Users\Conno\Desktop\Code\Entity101\Entity101_GUI\obj\Debug\Entity101_GUI.cspr
 D:\Users\Conno\Desktop\Code\Entity101\Entity101_GUI\obj\Debug\Entity101_GUI.csproj.CopyComplete
 D:\Users\Conno\Desktop\Code\Entity101\Entity101_GUI\obj\Debug\Entity101_GUI.exe
 D:\Users\Conno\Desktop\Code\Entity101\Entity101_GUI\obj\Debug\Entity101_GUI.pdb
+D:\Users\Conno\Desktop\Code\Entity101\Entity101_GUI\obj\Debug\Entity101_GUI.csprojAssemblyReference.cache
+D:\Users\Conno\Desktop\Code\Entity101\Entity101_GUI\bin\Debug\MySql.Data.dll
+D:\Users\Conno\Desktop\Code\Entity101\Entity101_GUI\bin\Debug\MySql.Data.EntityFramework.dll
+D:\Users\Conno\Desktop\Code\Entity101\Entity101_GUI\bin\Debug\MySQL.Data.EntityFrameworkCore.Design.dll
+D:\Users\Conno\Desktop\Code\Entity101\Entity101_GUI\bin\Debug\MySQL.Data.EntityFrameworkCore.dll
+D:\Users\Conno\Desktop\Code\Entity101\Entity101_GUI\bin\Debug\MySql.Web.dll
+D:\Users\Conno\Desktop\Code\Entity101\Entity101_GUI\bin\Debug\Google.Protobuf.dll
+D:\Users\Conno\Desktop\Code\Entity101\Entity101_GUI\bin\Debug\MySql.Data.xml
+D:\Users\Conno\Desktop\Code\Entity101\Entity101_GUI\bin\Debug\MySql.Data.EntityFramework.xml
+D:\Users\Conno\Desktop\Code\Entity101\Entity101_GUI\bin\Debug\MySQL.Data.EntityFrameworkCore.xml
+D:\Users\Conno\Desktop\Code\Entity101\Entity101_GUI\bin\Debug\MySQL.Data.EntityFrameworkCore.Design.xml
+D:\Users\Conno\Desktop\Code\Entity101\Entity101_GUI\bin\Debug\MySql.Web.xml
+D:\Users\Conno\Desktop\Code\Entity101\Entity101_GUI\obj\Debug\Entity101_GUI.exe.config
+D:\Users\Conno\Desktop\Code\Entity101\Entity101_GUI\obj\Debug\Entity101_GUI.main.resources

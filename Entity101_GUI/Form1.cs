@@ -40,7 +40,7 @@ namespace Entity101_GUI
 
         private void bunifuThinButton21_Click(object sender, EventArgs e)
         {
-            MySqlConnection con = new MySqlConnection("server=curtinfrc.duckdns.org;port=3306;user id=Entity101;Password=Brett&Sue141161422353;database=blitzen");
+            MySqlConnection con = new MySqlConnection("server=curtinfrc.duckdns.org;user id=entity101;Password=entity101;database=entity101");
             con.Open();
             //MySqlCommand cmd = new MySqlCommand("select * from users where Username='" + textBox1.Text + "' and Password='" + textBox2.Text + "'", con);
             MySqlDataAdapter sda = new MySqlDataAdapter("Select Count(*) From users where Username='" + textBox1.Text + "' and Password='" + textBox2.Text + "'", con);
@@ -48,7 +48,7 @@ namespace Entity101_GUI
             sda.Fill(dt);
             if (dt.Rows[0][0].ToString() == "1")
             {
-                this.Hide();
+                this.Close();
                 main ss = new main();
                 ss.Show();
             }
@@ -56,6 +56,11 @@ namespace Entity101_GUI
             {
                 MessageBox.Show("Please Check your Username and Password");
             }
+        }
+
+        private void bunifuThinButton22_Click_2(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

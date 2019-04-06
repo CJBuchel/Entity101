@@ -96,7 +96,7 @@
             this.bunifuThinButton21.ActiveFillColor = System.Drawing.Color.SeaGreen;
             this.bunifuThinButton21.ActiveForecolor = System.Drawing.Color.White;
             this.bunifuThinButton21.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton21.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuThinButton21.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.bunifuThinButton21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton21.BackgroundImage")));
             this.bunifuThinButton21.ButtonText = "Login";
             this.bunifuThinButton21.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -122,7 +122,7 @@
             this.bunifuThinButton22.ActiveFillColor = System.Drawing.Color.SeaGreen;
             this.bunifuThinButton22.ActiveForecolor = System.Drawing.Color.White;
             this.bunifuThinButton22.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton22.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuThinButton22.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.bunifuThinButton22.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton22.BackgroundImage")));
             this.bunifuThinButton22.ButtonText = "Exit";
             this.bunifuThinButton22.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -139,6 +139,7 @@
             this.bunifuThinButton22.Size = new System.Drawing.Size(120, 35);
             this.bunifuThinButton22.TabIndex = 8;
             this.bunifuThinButton22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuThinButton22.Click += new System.EventHandler(this.bunifuThinButton22_Click_2);
             // 
             // Login
             // 
