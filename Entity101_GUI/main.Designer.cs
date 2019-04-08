@@ -34,7 +34,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.Color.DimGray;
+            this.BackgroundImage = global::Entity101_GUI.Properties.Resources.Network_Wallpaper_1;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(1191, 696);
             this.Name = "main";
             this.Text = "Entity101_Data";
             this.Load += new System.EventHandler(this.main_Load);
