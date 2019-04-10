@@ -11,10 +11,10 @@ deploy {
       locations {
         // Change this if you've changed the target hostname, username or password.
         ssh {
-          address = 'curtinvision.local'
+          address = 'entity101.local'
           // address = '192.168.0.100'
-          user = 'vision'
-          password = 'curtinfrc'
+          user = 'entity101'
+          password = 'entity101'
         }
       }
 
@@ -29,7 +29,7 @@ deploy {
       targetPlatform = project.hasProperty('raspberry') ? wpi.platforms.raspbian : TinkerboardPlugin.tinkerboardPlatform
 
       targets << 'coprocessor'
-      component = 'curtinFrcVision'
+      component = 'entity101Vision'
       buildType = 'debug'
 
       predeploy << { execute('sudo systemctl stop vision || true') }

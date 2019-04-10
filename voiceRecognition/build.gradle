@@ -7,7 +7,7 @@ toolchainsPlugin.withRaspbian()
 deploy {
   targets {
     target('coprocessor') {
-      directory = '/home/MachineLearning'
+      directory = '/home/VoiceRecognition'
       locations {
         // Change this if you've changed the target hostname, username or password.
         ssh {
@@ -25,32 +25,32 @@ deploy {
   }
 
   artifacts {
-    nativeArtifact('MachineLearning') {
+    nativeArtifact('voiceRecognition') {
       targetPlatform = project.hasProperty('raspberry') ? wpi.platforms.raspbian : TinkerboardPlugin.tinkerboardPlatform
 
       targets << 'coprocessor'
-      component = 'entity101MachineLearning'
+      component = 'entity101VoiceRecognition'
       buildType = 'debug'
 
-      predeploy << { execute('sudo systemctl stop MachineLearning || true') }
+      predeploy << { execute('sudo systemctl stop VoiceRecognition || true') }
       // Make sure we can run our program!
-      postdeploy << { execute('chmod +x entity101MachineLearning'); execute('sudo systemctl restart MachineLearning || true') }
+      postdeploy << { execute('chmod +x entity101VoiceRecognition'); execute('sudo systemctl restart VoiceRecognition || true') }
     }
 
-    // Some extra stuff for our MachineLearning program. Includes system configs, also!
-    fileTreeArtifact('MachineLearningResources') {
+    // Some extra stuff for our voice recognition program. Includes system configs, also!
+    fileTreeArtifact('VoiceRecognitionResources') {
       targets << 'coprocessor'
       files = fileTree(dir: 'src/main/resources')
 
-      // Install the systemd service. This makes our MachineLearning run on startup!
+      // Install the systemd service. This makes our voicerecognition run on startup!
       postdeploy << { 
         // Install a symlink for the service so the system can run it! A symlink is like a pointer for files
-        execute('sudo ln -sf $(pwd)/system/MachineLearning.service /etc/systemd/system')
+        execute('sudo ln -sf $(pwd)/system/VoiceRecognition.service /etc/systemd/system')
         if (project.hasProperty('stop')) {
-          execute('sudo systemctl daemon-reload; sudo service MachineLearning stop; sudo service MachineLearning status')
+          execute('sudo systemctl daemon-reload; sudo service VoiceRecognition stop; sudo service VoiceRecognition status')
         } else {
-          // Reload the system services and start our MachineLearning service. Also print out the status :)
-          execute('sudo systemctl daemon-reload; sudo service MachineLearning restart; sudo service MachineLearning status')
+          // Reload the system services and start our voicerecognition service. Also print out the status :)
+          execute('sudo systemctl daemon-reload; sudo service VoiceRecognition restart; sudo service VoiceRecognition status')
         }
       }
 
@@ -63,13 +63,13 @@ deploy {
       }
     }
 
-    // Store all the libraries in /home/MachineLearning/libraries, that way we don't poison /usr/local.
+    // Store all the libraries in /home/VoiceRecognition/libraries, that way we don't poison /usr/local.
     withType(jaci.gradle.deploy.artifact.BinaryLibraryArtifact) {
-      directory = '/home/MachineLearning/libraries'
+      directory = '/home/VoiceRecognition/libraries'
       predeploy << {
         execute("sudo mkdir -p ${directory} && sudo chmod -R 777 ${directory}/..")
         // Make sure the system can find our libraries!
-        execute("echo ${directory} | sudo tee /etc/ld.so.conf.d/MachineLearning.conf")
+        execute("echo ${directory} | sudo tee /etc/ld.so.conf.d/VoiceRecognition.conf")
       }
 
       // Refresh the system's cache of known libraries, so ours can be found
@@ -80,7 +80,7 @@ deploy {
 
 model {
   components {
-    entity101MachineLearning(NativeExecutableSpec) {
+    entity101VoiceRecognition(NativeExecutableSpec) {
       targetPlatform wpi.platforms.desktop
       targetPlatform wpi.platforms.raspbian
       targetPlatform TinkerboardPlugin.tinkerboardPlatform
@@ -110,4 +110,5 @@ model {
     }
   }
 }
-task runMachineLearning(dependsOn: "simulateEntity101MachineLearning${wpi.platforms.desktop.capitalize()}DebugExecutable")
+
+task runVoiceRecognition(dependsOn: "simulateentity101VoiceRecognition${wpi.platforms.desktop.capitalize()}DebugExecutable")
