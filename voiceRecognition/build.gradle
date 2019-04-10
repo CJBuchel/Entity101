@@ -1,0 +1,114 @@
+apply plugin: 'cpp'
+apply plugin: 'google-test-test-suite'
+apply plugin: 'edu.wpi.first.GradleRIO'
+apply plugin: TinkerboardPlugin
+toolchainsPlugin.withRaspbian()
+
+deploy {
+  targets {
+    target('coprocessor') {
+      directory = '/home/VoiceRecognition'
+      locations {
+        // Change this if you've changed the target hostname, username or password.
+        ssh {
+          address = 'entity101.local'
+          // address = '192.168.0.100'
+          user = 'entity101'
+          password = 'entity101'
+        }
+      }
+
+      // For VSCode Debugging - we won't be able to deploy to every target!
+      if (project.hasProperty("debugMode"))
+        failOnMissing = false
+    }
+  }
+
+  artifacts {
+    nativeArtifact('voiceRecognition') {
+      targetPlatform = project.hasProperty('raspberry') ? wpi.platforms.raspbian : TinkerboardPlugin.tinkerboardPlatform
+
+      targets << 'coprocessor'
+      component = 'entity101VoiceRecognition'
+      buildType = 'debug'
+
+      predeploy << { execute('sudo systemctl stop VoiceRecognition || true') }
+      // Make sure we can run our program!
+      postdeploy << { execute('chmod +x entity101VoiceRecognition'); execute('sudo systemctl restart VoiceRecognition || true') }
+    }
+
+    // Some extra stuff for our voice recognition program. Includes system configs, also!
+    fileTreeArtifact('VoiceRecognitionResources') {
+      targets << 'coprocessor'
+      files = fileTree(dir: 'src/main/resources')
+
+      // Install the systemd service. This makes our voicerecognition run on startup!
+      postdeploy << { 
+        // Install a symlink for the service so the system can run it! A symlink is like a pointer for files
+        execute('sudo ln -sf $(pwd)/system/VoiceRecognition.service /etc/systemd/system')
+        if (project.hasProperty('stop')) {
+          execute('sudo systemctl daemon-reload; sudo service VoiceRecognition stop; sudo service VoiceRecognition status')
+        } else {
+          // Reload the system services and start our voicerecognition service. Also print out the status :)
+          execute('sudo systemctl daemon-reload; sudo service VoiceRecognition restart; sudo service VoiceRecognition status')
+        }
+      }
+
+      // Configure the SSH server. Also backs up the ssh config
+      postdeploy << {
+        // Back up the stock sshd config, just in case!
+        execute('sudo cp -n /etc/ssh/sshd_config /etc/ssh/sshd_config.old')
+        // Replace the stock sshd config with ours (to allow X forwarding)
+        execute('sudo cp $(pwd)/system/sshd_config /etc/ssh/sshd_config')
+      }
+    }
+
+    // Store all the libraries in /home/VoiceRecognition/libraries, that way we don't poison /usr/local.
+    withType(jaci.gradle.deploy.artifact.BinaryLibraryArtifact) {
+      directory = '/home/VoiceRecognition/libraries'
+      predeploy << {
+        execute("sudo mkdir -p ${directory} && sudo chmod -R 777 ${directory}/..")
+        // Make sure the system can find our libraries!
+        execute("echo ${directory} | sudo tee /etc/ld.so.conf.d/VoiceRecognition.conf")
+      }
+
+      // Refresh the system's cache of known libraries, so ours can be found
+      postdeploy << { execute('sudo ldconfig') }
+    }
+  }
+}
+
+model {
+  components {
+    entity101VoiceRecognition(NativeExecutableSpec) {
+      targetPlatform wpi.platforms.desktop
+      targetPlatform wpi.platforms.raspbian
+      targetPlatform TinkerboardPlugin.tinkerboardPlatform
+
+      sources.cpp {
+        source {
+          srcDir 'src/main/cpp'
+        }
+        exportedHeaders {
+          srcDir 'src/main/include'
+        }
+      }
+
+      binaries.all {
+        if (targetPlatform.name == wpi.platforms.desktop) {
+          cppCompiler.define '__DESKTOP__'
+          if (targetPlatform.operatingSystem.isLinux()) {
+            linker.args << '-lusb-1.0'
+          }
+        } else if (targetPlatform.name == TinkerboardPlugin.tinkerboardPlatform) {
+          linker.args << '-pthread'
+        }
+      }
+
+      useLibrary(it, 'opencv', 'cameraserver', 'cscore', 'ntcore', 'wpiutil')
+      wpi.deps.vendor.cpp(it)
+    }
+  }
+}
+
+task runVoiceRecognition(dependsOn: "simulateentity101VoiceRecognition${wpi.platforms.desktop.capitalize()}DebugExecutable")
