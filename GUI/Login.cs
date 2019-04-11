@@ -22,6 +22,7 @@ namespace GUI
         public Login()
         {
             InitializeComponent();
+            textBox2.UseSystemPasswordChar = true;
         }
 
         private void Login_Load(object sender, EventArgs e)
@@ -54,9 +55,9 @@ namespace GUI
                 sda.Fill(dt);
                 if (dt.Rows[0][0].ToString() == "1")
                 {
-                    this.Hide();
                     Main ss = new Main();
                     ss.Show();
+                    this.Hide();
                 }
             }
             else
@@ -69,6 +70,23 @@ namespace GUI
         private void bunifuThinButton21_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void bunifuCheckbox1_OnChange(object sender, EventArgs e)
+        {
+            if (bunifuCheckbox1.Checked)
+            {
+                textBox2.UseSystemPasswordChar = false;
+            }
+            else
+            {
+                textBox2.UseSystemPasswordChar = true;
+            }
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

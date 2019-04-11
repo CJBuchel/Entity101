@@ -187,5 +187,26 @@
   <ItemGroup>
     <None Include="Resources\Entity101Main.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\No signal.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\no signal2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\No Signal3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\camera icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\database icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DataBase wireless Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Exit icon.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
