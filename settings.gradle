@@ -4,26 +4,26 @@ pluginManagement {
     repositories {
         mavenLocal()
         gradlePluginPortal()
-        String frcYear = '2019'
-        File frcHome
+        String entity101Year = '2019'
+        File entity101Home
         if (OperatingSystem.current().isWindows()) {
             String publicFolder = System.getenv('PUBLIC')
             if (publicFolder == null) {
                 publicFolder = "C:\\Users\\Public"
             }
-            frcHome = new File(publicFolder, "frc${frcYear}")
+            entity101Home = new File(publicFolder, "entity101${entity101Year}")
         } else {
             def userFolder = System.getProperty("user.home")
-            frcHome = new File(userFolder, "frc${frcYear}")
+            frcHome = new File(userFolder, "entity101${entity101Year}")
         }
-        def frcHomeMaven = new File(frcHome, 'maven')
+        def entity101HomeMaven = new File(entity101Home, 'maven')
         maven {
-            name 'frcHome'
-            url frcHomeMaven
+            name 'entity101Home'
+            url entity101HomeMaven
         }
     }
 }
 
 rootProject.name = 'Entity101'
 
-include 'common', 'voiceRecognition', 'MachineLearning', 'Testbot', 'vision'
+include 'common', 'voiceRecognition', 'MachineLearning', 'vision'
