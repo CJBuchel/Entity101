@@ -1,5 +1,5 @@
 #pragma once
-class curtin_frc_vision {
+class entity101_vision {
  public:
   void run();
 };

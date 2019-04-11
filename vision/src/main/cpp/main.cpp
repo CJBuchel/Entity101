@@ -11,18 +11,18 @@ int main(int argc, char **argv) {
 
   auto ntinst = nt::NetworkTableInstance::GetDefault();
   if (team != 0) {
-    std::cout << "Starting CurtinFRC Vision Program (Client Mode - Team " << team << ")" << std::endl;
+    std::cout << "Starting Entity101 Vision Program (Client Mode - Team " << team << ")" << std::endl;
     ntinst.StartClientTeam(team);
   } else {
-    std::cout << "Starting CurtinFRC Vision Program (Server Mode - For Testing Only)" << std::endl;
+    std::cout << "Starting Entity101 Vision Program (Server Mode - For Testing Only)" << std::endl;
     ntinst.SetServer("CurtinFRCVision");
     ntinst.StartServer();
   }
 
-  curtin_frc_vision vision;  
+  entity101_vision vision;  
   vision.run();
 
-  std::cout << "Vision Program Exited. Was that meant to happen?" << std::endl;
+  std::cout << "Vision Program Exited. Error Has Probably Occured" << std::endl;
   return -1;
 }
 #endif
