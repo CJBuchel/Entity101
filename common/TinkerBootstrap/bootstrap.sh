@@ -6,6 +6,7 @@ echo "%sudo ALL=(ALL) NOPASSWD:ALL" | sudo tee -a /etc/sudoers
 # Install required packages
 sudo apt-get update
 sudo apt-get install -y avahi-daemon libnss-mdns v4l-utils imagemagick
+sudo apt-get install openjdk-8-jdk
 
 # Add entity101 user and password
 sudo adduser entity101 --disabled-password --gecos ""
@@ -18,9 +19,9 @@ echo "entity101:entity101" | sudo chpasswd
 echo entity101 | sudo tee /etc/hostname
 echo "127.0.0.1 entity101" | sudo tee /etc/hosts
 
-mkdir -p /home/vision
-mkdir -p /home/voicerecognition
-mkdir -p /home/machinelearning
+mkdir -p /home/Vision
+mkdir -p /home/VoiceRecognition
+mkdir -p /home/MachineLearning
 
 
 # Reboot to commit changes
