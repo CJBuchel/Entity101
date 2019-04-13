@@ -80,7 +80,7 @@ deploy {
 
 model {
   components {
-    entity101MachineLearning(NativeExecutableSpec) {
+    Entity101MachineLearning(NativeExecutableSpec) {
       targetPlatform wpi.platforms.desktop
       targetPlatform wpi.platforms.raspbian
       targetPlatform TinkerboardPlugin.tinkerboardPlatform

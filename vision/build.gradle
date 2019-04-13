@@ -7,7 +7,7 @@ toolchainsPlugin.withRaspbian()
 deploy {
   targets {
     target('coprocessor') {
-      directory = '/home/vision'
+      directory = '/home/Vision'
       locations {
         // Change this if you've changed the target hostname, username or password.
         ssh {
@@ -25,32 +25,32 @@ deploy {
   }
 
   artifacts {
-    nativeArtifact('vision') {
+    nativeArtifact('Vision') {
       targetPlatform = project.hasProperty('raspberry') ? wpi.platforms.raspbian : TinkerboardPlugin.tinkerboardPlatform
 
       targets << 'coprocessor'
       component = 'Entity101Vision'
       buildType = 'debug'
 
-      predeploy << { execute('sudo systemctl stop vision || true') }
+      predeploy << { execute('sudo systemctl stop Vision || true') }
       // Make sure we can run our program!
-      postdeploy << { execute('chmod +x Entity101Vision'); execute('sudo systemctl restart vision || true') }
+      postdeploy << { execute('chmod +x Entity101Vision'); execute('sudo systemctl restart Vision || true') }
     }
 
-    // Some extra stuff for our vision program. Includes system configs, also!
-    fileTreeArtifact('visionResources') {
+    // Some extra stuff for our Vision program. Includes system configs, also!
+    fileTreeArtifact('VisionResources') {
       targets << 'coprocessor'
       files = fileTree(dir: 'src/main/resources')
 
-      // Install the systemd service. This makes our vision run on startup!
+      // Install the systemd service. This makes our Vision run on startup!
       postdeploy << { 
         // Install a symlink for the service so the system can run it! A symlink is like a pointer for files
-        execute('sudo ln -sf $(pwd)/system/vision.service /etc/systemd/system')
+        execute('sudo ln -sf $(pwd)/system/Vision.service /etc/systemd/system')
         if (project.hasProperty('stop')) {
-          execute('sudo systemctl daemon-reload; sudo service vision stop; sudo service vision status')
+          execute('sudo systemctl daemon-reload; sudo service Vision stop; sudo service Vision status')
         } else {
-          // Reload the system services and start our vision service. Also print out the status :)
-          execute('sudo systemctl daemon-reload; sudo service vision restart; sudo service vision status')
+          // Reload the system services and start our Vision service. Also print out the status :)
+          execute('sudo systemctl daemon-reload; sudo service Vision restart; sudo service Vision status')
         }
       }
 
@@ -63,13 +63,13 @@ deploy {
       }
     }
 
-    // Store all the libraries in /home/vision/libraries, that way we don't poison /usr/local.
+    // Store all the libraries in /home/Vision/libraries, that way we don't poison /usr/local.
     withType(jaci.gradle.deploy.artifact.BinaryLibraryArtifact) {
-      directory = '/home/vision/libraries'
+      directory = '/home/Vision/libraries'
       predeploy << {
         execute("sudo mkdir -p ${directory} && sudo chmod -R 777 ${directory}/..")
         // Make sure the system can find our libraries!
-        execute("echo ${directory} | sudo tee /etc/ld.so.conf.d/vision.conf")
+        execute("echo ${directory} | sudo tee /etc/ld.so.conf.d/Vision.conf")
       }
 
       // Refresh the system's cache of known libraries, so ours can be found
