@@ -25,31 +25,31 @@ deploy {
   }
 
   artifacts {
-    nativeArtifact('voiceRecognition') {
+    nativeArtifact('VoiceRecognition') {
       targetPlatform = project.hasProperty('raspberry') ? wpi.platforms.raspbian : TinkerboardPlugin.tinkerboardPlatform
 
       targets << 'coprocessor'
-      component = 'entity101VoiceRecognition'
+      component = 'Entity101Voice'
       buildType = 'debug'
 
       predeploy << { execute('sudo systemctl stop VoiceRecognition || true') }
       // Make sure we can run our program!
-      postdeploy << { execute('chmod +x entity101VoiceRecognition'); execute('sudo systemctl restart VoiceRecognition || true') }
+      postdeploy << { execute('chmod +x Entity101Voice'); execute('sudo systemctl restart VoiceRecognition || true') }
     }
 
-    // Some extra stuff for our voice recognition program. Includes system configs, also!
+    // Some extra stuff for our Voice recognition program. Includes system configs, also!
     fileTreeArtifact('VoiceRecognitionResources') {
       targets << 'coprocessor'
       files = fileTree(dir: 'src/main/resources')
 
-      // Install the systemd service. This makes our voicerecognition run on startup!
+      // Install the systemd service. This makes our VoiceRecognition run on startup!
       postdeploy << { 
         // Install a symlink for the service so the system can run it! A symlink is like a pointer for files
         execute('sudo ln -sf $(pwd)/system/VoiceRecognition.service /etc/systemd/system')
         if (project.hasProperty('stop')) {
           execute('sudo systemctl daemon-reload; sudo service VoiceRecognition stop; sudo service VoiceRecognition status')
         } else {
-          // Reload the system services and start our voicerecognition service. Also print out the status :)
+          // Reload the system services and start our VoiceRecognition service. Also print out the status :)
           execute('sudo systemctl daemon-reload; sudo service VoiceRecognition restart; sudo service VoiceRecognition status')
         }
       }
@@ -80,7 +80,7 @@ deploy {
 
 model {
   components {
-    entity101VoiceRecognition(NativeExecutableSpec) {
+    Entity101Voice(NativeExecutableSpec) {
       targetPlatform wpi.platforms.desktop
       targetPlatform wpi.platforms.raspbian
       targetPlatform TinkerboardPlugin.tinkerboardPlatform
@@ -111,4 +111,4 @@ model {
   }
 }
 
-task runVoiceRecognition(dependsOn: "simulateentity101VoiceRecognition${wpi.platforms.desktop.capitalize()}DebugExecutable")
+task runVoice(dependsOn: "simulateEntity101Voice${wpi.platforms.desktop.capitalize()}DebugExecutable")
