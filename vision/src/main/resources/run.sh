@@ -1,3 +1,3 @@
 #!/bin/bash
 
-/home/vision/curtinFrcVision $(cat /home/vision/team 2>/dev/null || echo 0)
+/home/vision/Entity101Vision $(cat /home/vision/team 2>/dev/null || echo 0)
