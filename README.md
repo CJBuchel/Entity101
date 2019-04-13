@@ -34,7 +34,7 @@ Deploying will build your code (as above), and deploy it to the robot. You have 
 You can run the code on your local computer without needing a Raspberry Pi or Tinker Board to test on. As long as you have a webcam (for vision), you should be A OK.
 
 ## [Common](common)
-Common is code that is shared between both teams. It includes the bulk of our code and the bootstrap for the tinkerboard. 
+Common is code that is shared between all folders. It includes the bulk of our code and the bootstrap for the tinkerboard. 
 It also includes the simulation framework, as well as simulation 'wrappers' for vendor parts that don't have builds for desktop (like CTRE and NavX).
 Almost all of the code should be inside of `common`, so if we move parts between the robot, or need to do quick repairs, we don't have to reinvent code.
 
