@@ -22,7 +22,7 @@ int main(int argc, char **argv) {
   entity101_vision vision;  
   vision.run();
 
-  std::cout << "Vision Program Exited. Error Has Probably Occured" << std::endl;
+  std::cout << "Vision Program Exited. Error Check Required" << std::endl;
   return -1;
 }
 #endif
