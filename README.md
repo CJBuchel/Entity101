@@ -2,7 +2,7 @@ Entity101
 ===
 
 ## Project Setup
-First you will need to download all dependencies the project needs. Luckily being the best thing that ever happened to programming, gradle does this all for you. Just enter the command in the project directory `.\gradlew downloadAll` and it should download all the nesessary dependecies and requirements.
+- First you will need to download all dependencies the project needs. Luckily being the best thing that ever happened to programming,     gradle does this all for you. Just enter the command in the project directory `.\gradlew downloadAll` and it should download all the      nesessary dependecies and requirements.
 
 # Getting started
 
