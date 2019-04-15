@@ -2,7 +2,7 @@
 #include "voice.h"
 #ifdef WIN32
 #include <windows.h>
-#else
+#elif(UNIX)
 #include <unistd.h>
 #endif
 
@@ -24,10 +24,9 @@ void entity101_voiceRecognition::run()
 		// here.  For this sample, we'll just sleep for a little bit.
 #ifdef WIN32
 		::Sleep(200);
-#else
+#elif(UNIX)
 		usleep(200);
 #endif
-
 		while (voce::getRecognizerQueueSize() > 0)
 		{
 			std::string s = voce::popRecognizedString();
