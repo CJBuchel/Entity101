@@ -1,7 +1,11 @@
 Entity101
 ===
 
+## Project Setup
+- First you will need to download all dependencies the project needs. Luckily being the best thing that ever happened to programming,     gradle does this all for you. Just enter the command in the project directory `.\gradlew downloadAll` and it should download all the      nesessary dependecies and requirements.
+
 # Getting started
+
 ### 1. Grab the image:
   - [Tinkerboard Image](https://dlcdnets.asus.com/pub/ASUS/mb/Linux/Tinker_Board_S/20181023-tinker-board-linaro-stretch-alip-v2.0.8.img.zip)
     - Make sure you use version 2.0.8! v1.8 doesn't work with some USB cameras (nor the Kinect) due to a kernel problem.
@@ -21,12 +25,13 @@ Entity101
 ### 5. Your Coprocessor will now restart
 
 # Quick Commands
+
 ## Build
 `./gradlew build`, `./gradlew :vision:build`, `./gradlew :voicerecognition:build`, or `./gradlew :machinelearning:build`,
 Build will compile and get the code ready without deploying it. It will also run all automated tests, which is great for testing your code before it ever gets run on a robot (which also means you can build whenever)
 
 ## Deploy
-`./gradlew :vision:deploy`, `./gradlew :voicerecognition:build`, or `./gradlew :machinlearning:deploy`  
+`./gradlew :vision:deploy`, `./gradlew :voicerecognition:deploy`, or `./gradlew :machinlearning:deploy`  
 Deploying will build your code (as above), and deploy it to the robot. You have to be connected to the robot for this to work. Just keep in mind that deploying _does not run any automated tests_.
 
 ## Running Code Locally
