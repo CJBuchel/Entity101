@@ -1,38 +1,48 @@
-#include "voice.h"
-#include <iostream>
-#include <networktables/NetworkTableInstance.h>
 
-#ifndef RUNNING_FRC_TESTS
-int main(int argc, char **argv) {
-  int team = 0;
-  if (argc > 1) {
-    team = std::stoi(argv[1]);
-  }
-
-#ifdef __DESKTOP__
-  std::cout << "Running on Desktop - imshow enabled" << std::endl;
-  bool isDesktop = true;
+#include <voce.h>
+#ifdef _WIN32
+#include <windows.h>
 #else
-  std::cout << "Running embedded - imshow disabled" << std::endl;
-  bool isDesktop = false;
+#include <unistd.h>
 #endif
 
-  auto ntinst = nt::NetworkTableInstance::GetDefault();
-  if (team != 0) {
-    std::cout << "Starting Entity101 Voice Recognition Program (Client Mode - Team " << team << ")" << std::endl;
-    ntinst.StartClientTeam(team);
-  } else {
-    std::cout << "Starting Entity101 Vision Program (Server Mode - For Testing Only)" << std::endl;
-    ntinst.SetServer("CurtinFRCVision");
-    ntinst.StartServer();
-  }
+/// A sample application showing how to use Voce's speech synthesis 
+/// capabilities.
 
-  entity101_voiceRecognition voiceRecognition;  
-  entity101_voiceRecognition voiceSynthesis;
-  voiceRecognition.run();
-  voiceSynthesis.run();
+int main(int argc, char **argv)
+{
+	voce::init("../../../lib", false, true, "./grammar", "digits");
 
-  std::cout << "Voice Program Exited. Error Check Required" << std::endl;
-  return -1;
+	std::cout << "This is a speech recognition test. " 
+		<< "Speak digits from 0-9 into the microphone. " 
+		<< "Speak 'quit' to quit." << std::endl;
+
+	bool quit = false;
+	while (!quit)
+	{
+		// Normally, applications would do application-specific things 
+		// here.  For this sample, we'll just sleep for a little bit.
+#ifdef _WIN32
+		::Sleep(200);
+#else
+		usleep(200);
+#endif
+
+		while (voce::getRecognizerQueueSize() > 0)
+		{
+			std::string s = voce::popRecognizedString();
+
+			// Check if the string contains 'quit'.
+			if (std::string::npos != s.rfind("quit"))
+			{
+				quit = true;
+			}
+
+			std::cout << "You said: " << s << std::endl;
+			//voce::synthesize(s);
+		}
+	}
+
+	voce::destroy();
+	return 0;
 }
-#endif

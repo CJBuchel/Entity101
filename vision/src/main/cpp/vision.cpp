@@ -31,7 +31,7 @@ bool TargetObjectAquired;
 int objXoffset, objYoffset;
 
 
-int ResWidth = 640, ResHeight = 480;
+int ResWidth = 320, ResHeight = 240;
 
 void entity101_vision::run() {
   
