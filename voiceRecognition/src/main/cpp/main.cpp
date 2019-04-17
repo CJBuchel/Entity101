@@ -1,5 +1,6 @@
 
 #include <voce.h>
+#include <iostream>
 #ifdef _WIN32
 #include <windows.h>
 #else
@@ -11,7 +12,7 @@
 
 int main(int argc, char **argv)
 {
-	voce::init("../../../lib", false, true, "./grammar", "digits");
+	voce::init("../include", false, true, "../resources/grammer", "digits");
 
 	std::cout << "This is a speech recognition test. " 
 		<< "Speak digits from 0-9 into the microphone. " 
