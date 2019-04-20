@@ -37,7 +37,7 @@ void entity101_vision::run() {
   
 
   // This creates a webcam on USB, and dumps it into a sink. The sink allows us to access the image with sink.GrabFrame
-  cs::UsbCamera cam{"USBCam", 0};
+  cs::UsbCamera cam{"USBCam", 4};
   cs::CvSink sink{"USB"};
   sink.SetSource(cam);
 

@@ -21,7 +21,7 @@ Entity101
   - Raspberry Pi:
     - Hostname: `raspberrypi`, Username: `pi`, Password: `raspberry`
 ### 4. Run the following command:
-  - `wget --no-check-certificate -qO - https://github.com/A-Loose-Screw/Entity101/blob/master/common/TinkerBootstrap/bootstrap.sh?raw=1 | bash`
+  - `wget --no-check-certificate -qO - https://github.com/A-Loose-Screw/Entity101/blob/master/common/bootstrap.sh?raw=1 | bash`
 ### 5. Your Coprocessor will now restart
 
 # Quick Commands
