@@ -23,22 +23,22 @@ echo "127.0.0.1 entity101" | sudo tee /etc/hosts
 echo Team Number?
 read teamnum < /dev/tty
 
-mkdir -p /home/Vision
-mkdir -p /home/VoiceRecognition
-mkdir -p /home/MachineLearning
+mkdir -p /home/entity101/Vision
+mkdir -p /home/entity101/VoiceRecognition
+mkdir -p /home/entity101/MachineLearning
 
-echo $teamnum | sudo tee /home/Vision/team
-echo $teamnum | sudo tee /home/VoiceRecognition/team
-echo $teamnum | sudo tee /home/MachineLearning/team
+echo $teamnum | sudo tee /home/entity101/Vision/team
+echo $teamnum | sudo tee /home/entity101/VoiceRecognition/team
+echo $teamnum | sudo tee /home/entity101/MachineLearning/team
 
-sudo chown entity101 /home/Vision/team
-sudo chmod 777 /home/Vision/team
+sudo chown entity101 /home/entity101/Vision/team
+sudo chmod 777 /home/entity101/Vision/team
 
-sudo chown entity101 /home/VoiceRecognition/team
-sudo chmod 777 /home/VoiceRecognition/team
+sudo chown entity101 /home/entity101/VoiceRecognition/team
+sudo chmod 777 /home/entity101/VoiceRecognition/team
 
-sudo chown entity101 /home/MachineLearning/team
-sudo chmod 777 /home/MachineLearning/team
+sudo chown entity101 /home/entity101/MachineLearning/team
+sudo chmod 777 /home/entity101/MachineLearning/team
 
 
 # Reboot to commit changes
