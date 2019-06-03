@@ -17,7 +17,7 @@ compileJava {
 deploy {
   targets {
     target('coprocessor') {
-      directory = '/home/VoiceRecognition'
+      directory = '/home/entity101/VoiceRecognition'
       locations {
         // Change this if you've changed the target hostname, username or password.
         ssh {
@@ -73,9 +73,9 @@ deploy {
       }
     }
 
-    // Store all the libraries in /home/VoiceRecognition/libraries, that way we don't poison /usr/local.
+    // Store all the libraries in /home/entity101/VoiceRecognition/libraries, that way we don't poison /usr/local.
     withType(jaci.gradle.deploy.artifact.BinaryLibraryArtifact) {
-      directory = '/home/VoiceRecognition/libraries'
+      directory = '/home/entity101/VoiceRecognition/libraries'
       predeploy << {
         execute("sudo mkdir -p ${directory} && sudo chmod -R 777 ${directory}/..")
         // Make sure the system can find our libraries!

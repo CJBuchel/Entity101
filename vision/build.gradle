@@ -7,7 +7,7 @@ toolchainsPlugin.withRaspbian()
 deploy {
   targets {
     target('coprocessor') {
-      directory = '/home/Vision'
+      directory = '/home/entity101/Vision'
       locations {
         // Change this if you've changed the target hostname, username or password.
         ssh {
@@ -63,9 +63,9 @@ deploy {
       }
     }
 
-    // Store all the libraries in /home/Vision/libraries, that way we don't poison /usr/local.
+    // Store all the libraries in /home/entity101/Vision/libraries, that way we don't poison /usr/local.
     withType(jaci.gradle.deploy.artifact.BinaryLibraryArtifact) {
-      directory = '/home/Vision/libraries'
+      directory = '/home/entity101/Vision/libraries'
       predeploy << {
         execute("sudo mkdir -p ${directory} && sudo chmod -R 777 ${directory}/..")
         // Make sure the system can find our libraries!
