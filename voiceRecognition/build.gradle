@@ -1,3 +1,7 @@
+plugins {
+  id 'edu.wpi.first.GradleJni' version '0.4.1'
+}
+
 apply plugin: 'cpp'
 apply plugin: 'google-test-test-suite'
 apply plugin: 'edu.wpi.first.GradleRIO'
@@ -5,92 +9,15 @@ apply plugin: 'java-gradle-plugin'
 apply plugin: TinkerboardPlugin
 toolchainsPlugin.withRaspbian()
 
-
-
-
-
-
-// Ensure that the WPILibVersioningPlugin is setup by setting the release type, if releaseType wasn't
-// already specified on the command line
-if (!hasProperty('releaseType')) {
-  WPILibVersion {
-    releaseType = 'dev'
-  }
-}
-
-ext.pubVersion = ''
-if (project.hasProperty("publishVersion")) {
-  pubVersion = project.publishVersion
-} else {
-  pubVersion = WPILibVersion.version
-}
-
-if (pubVersion == '') {
-  pubVersion = '0.0.1-unknown'
-}
-
-if (project.hasProperty('localPublish')) {
-  pubVersion = '424242.0.0-local'
-}
-
-group 'edu.wpi.first'
-version pubVersion
-
 compileJava {
   sourceCompatibility = 1.8
   targetCompatibility = 1.8
 }
 
-publishing {
-  publications {
-    plugin(MavenPublication) {
-      artifact(jar) {
-        if (project.hasProperty('localPublish')) {
-          classifier null
-          groupId 'gradle.plugin.' + group
-        }
-      }
-    }
-  }
-}
-
-pluginBundle {
-  website = 'https://github.com/wpilibsuite/gradle-jni'
-  vcsUrl = 'https://github.com/wpilibsuite/gradle-jni'
-  description = 'This plugin provides easy to use JNI support for gradle.'
-  tags = ['groovy', 'jni', 'utils', 'maven', 'frc', 'wpilib']
-
-  plugins {
-    GradleJni {
-      id = 'edu.wpi.first.GradleJni'
-      displayName = 'Gradle JNI'
-    }
-  }
-}
-
-gradlePlugin {
-  plugins {
-    GradleJni {
-    	id = 'edu.wpi.first.GradleJni'
-    	implementationClass = 'edu.wpi.first.jni.GradleJni'
-    }
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
 deploy {
   targets {
     target('coprocessor') {
-      directory = '/home/VoiceRecognition'
+      directory = '/home/entity101/VoiceRecognition'
       locations {
         // Change this if you've changed the target hostname, username or password.
         ssh {
@@ -112,7 +39,7 @@ deploy {
       targetPlatform = project.hasProperty('raspberry') ? wpi.platforms.raspbian : TinkerboardPlugin.tinkerboardPlatform
 
       targets << 'coprocessor'
-      component = 'Entity101Voice'
+      component = 'Entity101VoiceExe'
       buildType = 'debug'
 
       predeploy << { execute('sudo systemctl stop VoiceRecognition || true') }
@@ -146,9 +73,9 @@ deploy {
       }
     }
 
-    // Store all the libraries in /home/VoiceRecognition/libraries, that way we don't poison /usr/local.
+    // Store all the libraries in /home/entity101/VoiceRecognition/libraries, that way we don't poison /usr/local.
     withType(jaci.gradle.deploy.artifact.BinaryLibraryArtifact) {
-      directory = '/home/VoiceRecognition/libraries'
+      directory = '/home/entity101/VoiceRecognition/libraries'
       predeploy << {
         execute("sudo mkdir -p ${directory} && sudo chmod -R 777 ${directory}/..")
         // Make sure the system can find our libraries!
@@ -163,7 +90,7 @@ deploy {
 
 model {
   components {
-    Entity101Voice(NativeExecutableSpec) {
+    Entity101VoiceLib(NativeLibrarySpec) {
       targetPlatform wpi.platforms.desktop
       targetPlatform wpi.platforms.raspbian
       targetPlatform TinkerboardPlugin.tinkerboardPlatform
@@ -174,24 +101,41 @@ model {
         }
         exportedHeaders {
           srcDir 'src/main/include'
+          // srcDir 'src/main/resources'
         }
       }
 
       binaries.all {
-        if (targetPlatform.name == wpi.platforms.desktop) {
-          cppCompiler.define '__DESKTOP__'
-          if (targetPlatform.operatingSystem.isLinux()) {
-            linker.args << '-lusb-1.0'
-          }
-        } else if (targetPlatform.name == TinkerboardPlugin.tinkerboardPlatform) {
+        if (targetPlatform.name == TinkerboardPlugin.tinkerboardPlatform) {
           linker.args << '-pthread'
         }
       }
 
-      useLibrary(it, 'opencv', 'cameraserver', 'cscore', 'ntcore', 'wpiutil')
+      useLibrary(it, 'ntcore', 'wpiutil')
+      wpi.deps.vendor.cpp(it)
+    }
+
+    Entity101VoiceExe(NativeExecutableSpec) {
+      targetPlatform wpi.platforms.desktop
+      targetPlatform wpi.platforms.raspbian
+      targetPlatform TinkerboardPlugin.tinkerboardPlatform
+
+      sources.cpp {
+        source {
+          srcDir 'src/main/cpp_exe'
+        }
+        exportedHeaders {
+          srcDir 'src/main/include'
+          // srcDir 'src/main/resources'
+        }
+        lib library: 'Entity101VoiceLib', linkage: 'static'
+      }
+
+      useLibrary(it, 'ntcore', 'wpiutil')
+
       wpi.deps.vendor.cpp(it)
     }
   }
 }
 
-task runVoice(dependsOn: "simulateEntity101Voice${wpi.platforms.desktop.capitalize()}DebugExecutable")
+task runVoice(dependsOn: "simulateEntity101VoiceExe${wpi.platforms.desktop.capitalize()}DebugExecutable")

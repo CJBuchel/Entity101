@@ -37,7 +37,7 @@ void entity101_vision::run() {
   
 
   // This creates a webcam on USB, and dumps it into a sink. The sink allows us to access the image with sink.GrabFrame
-  cs::UsbCamera cam{"USBCam", 0};
+  cs::UsbCamera cam{"USBCam", 1};
   cs::CvSink sink{"USB"};
   sink.SetSource(cam);
 
@@ -56,6 +56,7 @@ void entity101_vision::run() {
   cs::CvSource output = frc::CameraServer::GetInstance()->PutVideo("USB Camera", video_mode.width, video_mode.height);
 
   cv::Mat imgColoured{video_mode.height, video_mode.width, CV_8UC3};
+  
   cv::Mat VisionTracking;
 
   //-- 1. Load the cascades
@@ -77,7 +78,7 @@ void entity101_vision::run() {
     // Grab a frame. If it's not an error (!= 0), convert it to grayscale and send it to the dashboard.
     if (sink.GrabFrame(imgColoured) != 0) {
       std::vector<Rect> faces;
-
+      /*
       cvtColor( imgColoured, VisionTracking, COLOR_BGR2GRAY );
 
       //-- Detect faces
@@ -88,8 +89,8 @@ void entity101_vision::run() {
         Point center( faces[i].x + faces[i].width/2, faces[i].y + faces[i].height/2 );
         ellipse( imgColoured, center, Size( faces[i].width/2, faces[i].height/2), 0, 0, 360, Scalar( 255, 0, 0 ), 2, 2, 0 );
         putText(imgColoured, "Target Aquired", Point(center) + cv::Point(-10,10), FONT_HERSHEY_SIMPLEX, 1, Scalar(0,0,255));
-        HumXoffset = /*width_goal - */faces[i].x;
-        HumYoffset = /*height_goal - */faces[i].y;
+        HumXoffset = width_goal - faces[i].x;
+        HumYoffset = height_goal - faces[i].y;
       }
 
       //-- Detect Person
@@ -107,9 +108,11 @@ void entity101_vision::run() {
         stringstream temp;
         temp << weights[i];
         putText(imgColoured, temp.str(),Point(human[i].x,human[i].y+50), FONT_HERSHEY_SIMPLEX, 1, Scalar(0,0,255));
-        HumXoffset = /*width_goal - */human[i].x;
-        HumYoffset = /*height_goal - */human[i].y;
+        HumXoffset = width_goal - human[i].x;
+        HumYoffset = height_goal - human[i].y;
       }
+
+      */
       
       //-- Show what you got
       cout << "X[" << HumXoffset << "]," << "Y[" << HumYoffset << "]" << endl;
