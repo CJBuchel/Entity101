@@ -40,7 +40,7 @@ You can run the code on your local computer without needing a Raspberry Pi or Ti
 
 
 
-![alt text](http://url/to/Git_General_Pull.png)
+![alt text](https://github.com/A-Loose-Screw/Entity101/blob/master/temp/Git_General_Pull.png)
 
 
 
