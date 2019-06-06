@@ -40,6 +40,21 @@ You can run the code on your local computer without needing a Raspberry Pi or Ti
 
 
 
+
+
+
+
+
+
+## For The Members Invloved with programming on the project, the following is the general steps for how the project is pull requested
+- (1) First Make Sure you have forked the project to your account, then create a branch that is not master, (Master should be used as a fallback rather than a editing branch. It's also good practice to keep your master synced with the Origin Master [A-Loose-Screw/Entity101]) Then while on your editing branch sync it with your forked master.
+
+- (2) After Editing Your branch to the desired effect, and you think it's ready to be sent to the origin. Pull Request it with the origin page at (https://github.com/A-Loose-Screw/Entity101/pulls). It's also a general rule that you never send code that does not build or work to the origin. EVER. The origin has one branch and is suppose to be the working branch people get the code from, and should always be working. (finish the code on your own branch and if it doesn't work... don't send it, that simple) The only exception to this rule, is if the code your working with was already broken. And you are adding to fix the issue.
+
+- (3) After Pull requesting your code, pull request it again at the previous link, But Point it from A-Loose-Screw/Entity101 Master -> username/Entity101 Master, this will sync your master with (hopefully) working code. And code that was also sent and made by others.
+
+- (4) after this you can merge your Master branch your editing branch, And then after this has been done, you can continue editing your branch and repeat the process for your next pull request. However it's also to note, that if the pull request is pending. It is synced with your editing branch. so until it has been merged don't make any sudden changes that stop it from wokring again. But pull requests should only last for a few minutes 
+
 ![alt text](https://github.com/A-Loose-Screw/Entity101/blob/master/temp/Git_General_Pull.png)
 
 
