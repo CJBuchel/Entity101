@@ -53,7 +53,7 @@ You can run the code on your local computer without needing a Raspberry Pi or Ti
 
 - (3) After Pull requesting your code, pull request it again at the previous link, But Point it from A-Loose-Screw/Entity101 Master -> username/Entity101 Master, this will sync your master with (hopefully) working code. And code that was also sent and made by others.
 
-- (4) after this you can merge your Master branch to your editing branch, And then after this has been done, you can continue editing your branch and repeat the process for your next pull request. However it's also to note, that if the pull request is pending. It is synced with your editing branch. so until it has been merged don't make any sudden changes that stop it from wokring again. But pull requests should only last for a few minutes, so no changes should occure during the operation.
+- (4) after this you can merge your Master branch to your editing branch, And then after this has been done, you can continue editing your branch and repeat the process for your next pull request. However it's also to note, that if the pull request is pending. It is synced with your editing branch. so until it has been merged don't make any sudden changes that stop it from working again. But pull requests should only last for a few minutes, so no changes should occure during the operation.
 
 ![alt text](https://github.com/A-Loose-Screw/Entity101/blob/master/temp/Git_General_Pull.png)
 
