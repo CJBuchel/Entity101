@@ -38,6 +38,13 @@ Deploying will build your code (as above), and deploy it to the robot. You have 
 `./gradlew runVision`,`.\gradlew runVoice`,`.\gradlew runMachineLearning`
 You can run the code on your local computer without needing a Raspberry Pi or Tinker Board to test on. As long as you have a webcam (for vision), you should be A OK.
 
+
+
+![alt text](http://url/to/Git_General_Pull.png)
+
+
+
+
 ## [Common](common)
 Common is code that is shared between all folders. It includes the bulk of our code and the bootstrap for the tinkerboard. 
 It also includes the simulation framework, as well as simulation 'wrappers' for vendor parts that don't have builds for desktop (like CTRE and NavX).
