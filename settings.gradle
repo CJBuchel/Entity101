@@ -14,7 +14,7 @@ pluginManagement {
             entity101Home = new File(publicFolder, "entity101${entity101Year}")
         } else {
             def userFolder = System.getProperty("user.home")
-            frcHome = new File(userFolder, "entity101${entity101Year}")
+            entity101Home = new File(userFolder, "entity101${entity101Year}")
         }
         def entity101HomeMaven = new File(entity101Home, 'maven')
         maven {
