@@ -1,4 +1,3 @@
-#include "vision.h"
 #include <iostream>
 #include <networktables/NetworkTableInstance.h>
 
@@ -20,16 +19,16 @@ int main(int argc, char **argv) {
 
   auto ntinst = nt::NetworkTableInstance::GetDefault();
   if (team != 0) {
-    std::cout << "Starting Entity101 Vision Program (Client Mode - Team " << team << ")" << std::endl;
+    std::cout << "Starting Entity101 Voice Recognition Program (Client Mode - Team " << team << ")" << std::endl;
     ntinst.StartClientTeam(team);
   } else {
-    std::cout << "Starting Entity101 Vision Program (Server Mode - For Testing Only)" << std::endl;
+    std::cout << "Starting Entity101 Voice Recognition Program (Server Mode - For Testing Only)" << std::endl;
     ntinst.SetServer("Entity101");
     ntinst.StartServer();
   }
 
-  entity101_vision vision;  
-  vision.run();
+  entity101_voice voice;  
+  voice.run();
 
   std::cout << "Vision Program Exited. Error Check Required" << std::endl;
   return -1;
