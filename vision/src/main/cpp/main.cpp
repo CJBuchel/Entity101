@@ -24,7 +24,7 @@ int main(int argc, char **argv) {
     ntinst.StartClientTeam(team);
   } else {
     std::cout << "Starting Entity101 Vision Program (Server Mode - For Testing Only)" << std::endl;
-    ntinst.SetServer("CurtinFRCVision");
+    ntinst.SetServer("Entity101");
     ntinst.StartServer();
   }
 
