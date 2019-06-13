@@ -65,6 +65,11 @@ You can run the code on your local computer without needing a Raspberry Pi or Ti
 
 
 
+
+## [Log](LogReadMe.md)
+
+
+
 ## [Common](common)
 Common is code that is shared between all folders. It includes the bulk of our code and the bootstrap for the tinkerboard. 
 It also includes the simulation framework, as well as simulation 'wrappers' for vendor parts that don't have builds for desktop (like CTRE and NavX).
