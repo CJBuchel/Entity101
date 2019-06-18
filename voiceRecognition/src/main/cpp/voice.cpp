@@ -1,4 +1,8 @@
-#include <pocketsphinx.h>
+#include "sphinx/pocketsphinx.h"
+#include <iostream>
+#include "voice.h"
+#include <networktables/NetworkTableInstance.h>
+
 int
 main(int argc, char *argv[])
 {
