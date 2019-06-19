@@ -1,4 +1,5 @@
 #include <iostream>
+#include "voice.h"
 #include <networktables/NetworkTableInstance.h>
 
 #ifndef RUNNING_FRC_TESTS
