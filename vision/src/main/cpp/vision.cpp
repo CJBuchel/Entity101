@@ -31,13 +31,17 @@ bool TargetObjectAquired;
 int objXoffset, objYoffset;
 
 
-int ResWidth = 640, ResHeight = 480;
+int ResWidth = 320, ResHeight = 240;
 
 void entity101_vision::run() {
   
 
   // This creates a webcam on USB, and dumps it into a sink. The sink allows us to access the image with sink.GrabFrame
-  cs::UsbCamera cam{"USBCam", 1};
+#ifdef __DESKTOP__
+  cs::UsbCamera cam{"USBCam", 0}; // Desktop
+#else
+  cs::UsbCamera cam{"USBCam", 4}; // Pi/Tinker
+#endif
   cs::CvSink sink{"USB"};
   sink.SetSource(cam);
 
@@ -78,7 +82,7 @@ void entity101_vision::run() {
     // Grab a frame. If it's not an error (!= 0), convert it to grayscale and send it to the dashboard.
     if (sink.GrabFrame(imgColoured) != 0) {
       std::vector<Rect> faces;
-      /*
+
       cvtColor( imgColoured, VisionTracking, COLOR_BGR2GRAY );
 
       //-- Detect faces
@@ -112,13 +116,15 @@ void entity101_vision::run() {
         HumYoffset = height_goal - human[i].y;
       }
 
-      */
+      
       
       //-- Show what you got
       cout << "X[" << HumXoffset << "]," << "Y[" << HumYoffset << "]" << endl;
+    #ifdef __DESKTOP__
       imshow("VisionTracking", imgColoured);
-
+    #else
       output.PutFrame(imgColoured);
+    #endif
 		  waitKey(10);
 
     }

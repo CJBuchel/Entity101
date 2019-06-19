@@ -1,3 +1,8 @@
+![alt text](https://github.com/A-Loose-Screw/Entity101/blob/master/png/Entity101_1.png)
+
+
+
+
 Entity101
 ===
 
@@ -55,8 +60,13 @@ You can run the code on your local computer without needing a Raspberry Pi or Ti
 
 - (4) after this you can merge your Master branch to your editing branch, And then after this has been done, you can continue editing your branch and repeat the process for your next pull request. However it's also to note, that if the pull request is pending. It is synced with your editing branch. so until it has been merged don't make any sudden changes that stop it from working again. But pull requests should only last for a few minutes, so no changes should occure during the operation.
 
-![alt text](https://github.com/A-Loose-Screw/Entity101/blob/master/temp/Git_General_Pull.png)
+![alt text](https://github.com/A-Loose-Screw/Entity101/blob/master/png/Git_General_Pull.png)
 
+
+
+
+
+## [Log](LogReadMe.md)
 
 
 
